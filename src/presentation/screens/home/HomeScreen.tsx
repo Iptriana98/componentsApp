@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
+import { AirplaneIcon} from '../../icons/Icons';
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -9,6 +10,8 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Details"
         onPress={() => navigation.navigate('Details')}
       />
+
+      <AirplaneIcon />
     </View>
   );
 };
