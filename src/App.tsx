@@ -1,14 +1,13 @@
+// Importa los módulos necesarios
 import React from 'react';
-import {Text, View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigator from './presentation/navigation/Navigation';  // Importa el StackNavigator
 
 const App = () => {
   return (
-    <View>
-      <Text>App</Text>
-      <Text> version: 0.0.1</Text>
-      <Text> build: 1</Text>
-      <Text> branch: main</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 };
 
